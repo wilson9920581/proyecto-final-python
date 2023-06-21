@@ -1,0 +1,46 @@
+# Programa para calcular el valor de la matricula neta
+# Autor: Wilson Lancheros Càrdenas
+# Fecha: 10/11/2021
+
+N=int(input("Cantidad de estudiantes: "))
+for i in range (1,N+1,1):
+    codigo=int(input("Còdigo del estudiante: "))
+    nombre=input("Nombre del estudiante: ")
+    programa=int(input("programa acadèmico(1=Tècnico de sistemas,2=Tècnico en desarrollo de videojuegos,3=Tècnico en animaciòn digital):"))
+    beca=int(input("Tipo de beca:(1=Rendimiento acadèmico,2=Cultural-deportes,3=sin beca):"))
+    matricula=float(input("Digite el valor de la matricula: "))
+    if programa==1 and beca==1:
+        descuento=matricula*0.50
+        valor_final=matricula-descuento
+    else:
+         if programa==1 and beca==2:
+             descuento=matricula*0.40
+             valor_final=matricula-descuento
+         else:
+               valor_final=matricula
+    if  programa==2 and beca==1:
+        descuento=matricula*0.50
+        valor_final=matricula-descuento
+    else:
+        if programa==2 and beca==2:
+            descuento=matricula*0.40
+            valor_final=matricula-descuento
+        else: valor_final=matricula
+    if  programa==3 and beca==1:
+        descuento=matricula*0.50
+        valor_final=matricula-descuento
+    else:
+        if programa==3 and beca==2:
+            descuento=matricula*0.40
+            valor_final=matricula-descuento
+        else:
+            valor_final=matricula
+    
+    print("còdigo del estudiante: ",codigo)
+    print("Nombre del estudiante: ",nombre)
+    print("Valor matricula: ",matricula)
+    print("valor neto a pagar: ",valor_final)
+
+
+
+        
